@@ -14,6 +14,7 @@ $ npm install -g giphme
 $ giphme -k <your api key> <search term>
 ```
 \*_search term can include spaces and does not need to be enclosed in quotes_
+
 3. `cmd + v` to paste gif url
 4. Search anything else (no need to set key again unless it needs to be changed)
 ```
