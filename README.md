@@ -9,8 +9,26 @@ $ npm install -g giphme
 
 ## Usage
 1. Get an api key from [giphy](https://developers.giphy.com/dashboard/?create=true)
-2. Load your api key to the tool in your first search: `giphme -k <your api key> <search term>` \*_search term can include spaces and does not need to be enclosed in quotes_
+2. Load your api key to the tool in your first search:
+```
+$ giphme -k <your api key> <search term>
+```
+\*_search term can include spaces and does not need to be enclosed in quotes_
 3. `cmd + v` to paste gif url
+4. Search anything else (no need to set key again unless it needs to be changed)
+```
+$ giphme i aint the sharpest tool in the shed
+```
+
+## Docs
+
+Options:
+```
+-V, --version                       output the version number
+-k, --key <giphy api key>           set giphy api key
+-c, --count <number gifs returned>  number gifs to randomly pick from, default 5
+-h, --help                          output usage information
+```
 
 ## License
 
