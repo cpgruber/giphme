@@ -1,11 +1,14 @@
 # giphme
 
 ## Overview
-CLI tool to search giphy, copy gif url to clipboard (_macOS only_)
+CLI tool to search giphy, copy gif url to clipboard (_macOS\* and iTerm2\*\* only_)
 
 ```
 $ npm install -g giphme
 ```
+\* uses `pbcopy`
+
+\*\* uses [`term-img`](https://github.com/sindresorhus/term-img)
 
 ## Usage
 1. Get an api key from [giphy](https://developers.giphy.com/dashboard/?create=true)
@@ -16,9 +19,11 @@ $ npm install -g giphme
 
   # search term can include spaces and does not need to be enclosed in quotes
   ```
-
-3. `cmd + v` to paste gif url
-4. Search anything else (no need to set key again unless it needs to be changed)
+3. Scroll through gifs using interactive prompt:
+  - `n` or `return` to view next gif in queue
+  - `p` for previous
+4. link for currently viewed gif automatically copied to clipboard, `cmd + v` to paste
+5. `ctrl + c` to exit, do another search
 
   ```
   $ giphme i aint the sharpest tool in the shed
@@ -28,11 +33,13 @@ $ npm install -g giphme
 
 Options:
 ```
--V, --version                       output the version number
 -k, --key <giphy api key>           set giphy api key
--c, --count <number gifs returned>  number gifs to randomly pick from, default 5
+-c, --count <number gifs returned>  number gifs to pick from, default 10
+-r, --rating <gif rating>           g, pg, pg-13, r, default pg
+-V, --version                       output the version number
 -h, --help                          output usage information
 ```
+**Note:** when setting options, values are persisted for all subsequent searches
 
 ## License
 
