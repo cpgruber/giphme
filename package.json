@@ -1,6 +1,6 @@
 {
   "name": "giphme",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "CLI tool to copy giphy links to clipboard",
   "main": "./lib/index.js",
   "homepage": "https://github.com/cpgruber/giphme",
@@ -31,5 +31,9 @@
     "node-fetch": "^2.1.2",
     "term-img": "^2.1.0",
     "write-json-file": "^2.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "mocha": "^6.2.2"
   }
 }
